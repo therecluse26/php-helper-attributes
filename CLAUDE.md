@@ -30,3 +30,7 @@ public function fib(int $n): int {
     return $n <= 1 ? $n : $this->fib($n - 1) + $this->fib($n - 2);
 }
 ```
+
+## Notes
+
+This should be a Laravel package. This needs to be registered globally to the application via a service provider and implemented completely transparently. It should NOT require the user to do anything other than drop PHP attributes into their code. No setup should be required other than adding the package.
